@@ -1,14 +1,61 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap')
 
 // Config vars
-// Kaldi logo brand color: #FD461E
+
+$color-accent-001: #ff8a00
+$color-accent-002: #ffd9ad
+$color-accent-003: #e4ebee
+$color-base-001: #74cce5
+$color-base-002: #00a9d3
+$color-base-003: #007bb0
+$color-base-004: #aab3b7
+$color-base-005: #ffffff
+$color-secondary-001: #4cd700
+$color-secondary-002: #71e92f
+$color-secondary-003: #77a710
+$color-primary-001: #eb004
+$color-primary-002: #f5666f
+$color-primary-003: #dc859f
+$color-base-006: #161718
+$color-base-007: #376289
+$color-base-008: #004657
+$color-base-009: #004360
+
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: $color-base-009
+$primary-invert: $color-accent-003
 $body-color: #333
 $black: #2b2523
+
+$lato: 'Lato', sans-serif
+$merriweather: 'Merriweather', serif
+
+
+
+
+h1
+  size: 36px
+  font-family: $lato
+  font-weight: 900
+
+h2
+  size: 24px
+  font-family: $lato
+  font-weight: 900
+
+h3
+  size: 18px
+  font-family: $lato
+  font-weight: 900
+  text-transform: uppercase
+
+p
+  font-family: $merriweather
+
+
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -61,10 +108,10 @@ $black: #2b2523
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $color-base-009
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $color-base-009
+    box-shadow: inset 0 0 0 2px $color-base-009
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -88,9 +135,9 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $primary-invert
+$menu-item-active-background-color:	$primary-invert
+$menu-list-border-left: 1px solid $primary-invert
 $menu-label-color: $white-ter
 
 
@@ -114,7 +161,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033
+  background-color: $color-accent-002
 .blog-list-item header
   display: flex
   margin-bottom: 1em
